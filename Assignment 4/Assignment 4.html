@@ -1,0 +1,73 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 4</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="Assignment 4 css.css">
+    </head>
+    <body>
+      <h1 style="color:black"> ASSIGNMENT 4 </h1>
+      <form action="index.html" method="post">
+        <br>
+        <h1>INTERN FORM</h1>
+        
+        <fieldset>
+          
+          <label for="name"><strong>Name:</strong></label>
+          <input type="text" id="name" name="user_name" onblur="myFunction()">
+          
+          <label for="mail"><strong>Email:</strong></label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password"><strong>Password:</strong></label>
+          <input type="password" id="password" name="user_password">
+          
+          <label><strong>Age:</strong></label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light"><strong>UNDER 13</strong></label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light"><strong>13 OR older</strong></label>
+        </fieldset>
+        
+        <fieldset>
+          <label for="bio"><Strong>Self - Description</Strong></label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset >
+        <label for="job"><strong>Intern Role:</strong></label>
+        <select id="job" name="user_job">
+          <optgroup style="font-family: 'courier new',sans-serif;"label="Web">
+            <option style="font-family: 'courier new',sans-serif;" value="frontend_developer">Front-End Developer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="php_developor">PHP Developer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="python_developer">Python Developer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="rails_developer"> Rails Developer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="web_designer">Web Designer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="WordPress_developer">WordPress Developer</option>
+          </optgroup>
+          <optgroup style="font-family: 'courier new',sans-serif;" label="Mobile">
+            <option style="font-family: 'courier new',sans-serif;" value="Android_developer">Androild Developer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="iOS_developer">iOS Developer</option>
+            <option style="font-family: 'courier new',sans-serif;" value="mobile_designer">Mobile Designer</option>
+          </optgroup>
+          <optgroup style="font-family: 'courier new',sans-serif;" label="Business">
+            <option style="font-family: 'courier new',sans-serif;" value="business_owner">Business Owner</option>
+            <option style="font-family: 'courier new',sans-serif;" value="freelancer">Freelancer</option>
+          </optgroup>
+        </select>
+        
+          <label><strong>Interests:</strong></label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development"><strong>Development</strong></label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design"><strong>Design</strong></label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business"><strong>Business</strong></label>
+        
+        </fieldset>
+        <button type="submit" style="background-color: orange; color: black;"><strong>SUBMIT</strong></button>
+      </form>
+
+   <script>
+function myFunction() {
+  var x = document.getElementById("name");
+  x.value = x.value.toUpperCase();
+}
+</script> 
+      
+    </body>
+</html>
